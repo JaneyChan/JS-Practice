@@ -126,7 +126,6 @@ a, a:hover {
 		margin-bottom: 10px;
 	}
 	.content .daily-item {
-		padding: 20px;	
 		margin-left: 40px;
 		margin-right: 40px;
 	}
@@ -151,6 +150,7 @@ a, a:hover {
 	.content .daily-item {
 		width: 100%;  
 		height: 140px;
+		margin-right: 0px;
 	}
 	.nav-logo {
 		margin-left: 10px;
