@@ -4,7 +4,7 @@ html, body {
 	border: 0;
 }
 body {
-	background-color: #f9f9f9;
+	background-color: #F4F4F4;
 	color: #999;
 	font-size:14px;
 	font-family: "微软雅黑";
@@ -13,42 +13,62 @@ a, a:hover {
 	color: #999;
 	text-decoration: none;
 }
+/* 去掉的元素的边框 */
+*:focus {
+	outline: none;
+} 
 /* header */
 .header {
-	background: #008bed;
+	background: #009CDA;
 	height: 78px;
 	position: fixed;
     right: 0;
     left: 0;
     top: 0;
     z-index: 999;
-	-webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.05);
-    -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .05); 
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
 }
 .container-wrap {
 	margin: 0 auto;
 	width: 960px;
-}
-.nav-logo {
-    overflow: hidden;
-    width: 220px;
-    background: transparent url('../images/top_logo.png') no-repeat 0 13px;
+	position: relative;
 }
 .nav-logo .link-logo {
-    display: block;
-    height: 78px;
-    font-size: 0;
-    text-indent: -150%;
+    display: inline-block;
+	margin-top: 20px;
 }
+.calendar-box {
+	position: absolute;
+	right: 245px;
+	top: 21px;
+}
+.search-box {
+	position: absolute;
+	right: 10px;
+	top: 25px;
+}
+.search-box .search-btn {
+	position: absolute;
+	left: 5px;
+	top: 4px;
+}
+.search-box .search-text {
+	padding: 6px 6px 6px 25px;
+	font-size: 13px;
+	border: 0px;
+	border-radius: 5px;
+	width: 200px;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.1); 
+}
+
 /* content */
 .content {
 	margin-top: 120px;
 	margin-bottom: 50px;
 }
 .content .daily-date {
-	margin:30px 0;
-	color: #008bed;
+	margin:25px 0;
+	color: #009CDA;
 	font-size: 20px;
 	line-height: 20px;
 	text-shadow: 0 1px 2px #c4b59d, 0px -2px 1px #fff;
@@ -66,9 +86,7 @@ a, a:hover {
 	padding: 20px;	
 	margin: 0 25px 25px 0;
 	background: #fff;
-	-webkit-box-shadow:0 0 10px rgba(0, 0, 0, .05);  
-  	-moz-box-shadow:0 0 10px rgba(0, 0, 0, .05);  
-  	box-shadow:0 0 10px rgba(0, 0, 0, .05);  
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1); 
 }
 .content .daily-item:nth-child(3n) {
 	margin-right: 0;
@@ -94,7 +112,7 @@ a, a:hover {
     left: 0;
 }
 .content .daily-item-title:hover{
-	color: #008bed;
+	color: #009CDA;
 }
 .content .content-page {
 	text-align: center;
