@@ -20,13 +20,12 @@ a, a:hover {
 /* header */
 .header {
 	background: #009CDA;
-	height: 78px;
+	height: 75px;
 	position: fixed;
     right: 0;
     left: 0;
     top: 0;
     z-index: 999;
-	box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
 }
 .container-wrap {
 	margin: 0 auto;
@@ -39,7 +38,7 @@ a, a:hover {
 }
 .calendar-box {
 	position: absolute;
-	right: 245px;
+	right: 275px;
 	top: 21px;
 }
 .search-box {
@@ -57,14 +56,13 @@ a, a:hover {
 	font-size: 13px;
 	border: 0px;
 	border-radius: 5px;
-	width: 200px;
+	width: 250px;
 	box-shadow: 0 2px 3px rgba(0,0,0,0.1); 
 }
 
 /* content */
 .content {
-	margin-top: 120px;
-	margin-bottom: 50px;
+	margin-top: 115px;
 }
 .content .daily-date {
 	margin:25px 0;
@@ -137,12 +135,23 @@ a, a:hover {
 }
 
 @media (min-width: 768px) and (max-width: 960px) {
+	.calendar-box {
+		position: absolute;
+		right: 355px;
+		top: 21px;
+	}
+	.search-box {
+		position: absolute;
+		right: 90px;
+	}
+	.search-box .search-btn {
+		position: absolute;
+		left: 5px;
+		top: 4px;
+	}
 	.container-wrap {
     	width: 768px;
   	}
-	.content {
-		margin-bottom: 10px;
-	}
 	.content .daily-item {
 		margin-left: 40px;
 		margin-right: 40px;
@@ -155,11 +164,25 @@ a, a:hover {
 	}
 }
 @media (min-width: 320px) and (max-width: 768px) {
+	
+	.calendar-box {
+		position: absolute;
+		right: 175px;
+		top: 21px;
+	}
+	.search-box .search-btn {
+		position: absolute;
+		left: 5px;
+		top: 4px;
+	}
+	.search-box .search-text {
+		width: 150px;
+	}
 	.container-wrap {
     	width: 100%;
   	}
 	.content {
-		margin-bottom: 10px;
+		margin-top: 155px;
 	}
   	.content .daily-date {
 		margin-left: 10px;
