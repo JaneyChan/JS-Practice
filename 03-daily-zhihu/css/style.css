@@ -121,7 +121,7 @@ a, a:hover {
 
 /* footer */
 .footer {
-	padding: 30px 0;
+	margin-bottom: 30px;
 	background: #f3f3f3;
 	color: #666;
 	text-align: center;
@@ -168,8 +168,11 @@ a, a:hover {
 		right: 175px;
 		top: 21px;
 	}
-	.search-box .search-text {
+	/*.search-box .search-text {
 		width: 150px;
+	}*/
+	.search-box {
+		display: none;
 	}
 	.container-wrap {
     	width: 100%;
@@ -186,7 +189,6 @@ a, a:hover {
 	.nav-logo {
 		margin-left: 10px;
 	}
-	
 	.content .daily-item-img {
 	    width: 100px;
 	    height: 100px;
