@@ -6,10 +6,18 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
+	
 	<title>知乎日报</title>
+
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/calendar.css">
+
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/calendar.js"></script>
+
 </head>
 <body>
 	<!-- header / start -->
@@ -18,13 +26,9 @@
 			<div class="nav-logo">
 				<a href="http://zhihudaily.ahorn.me/" class="link-logo"><img src="images/zhihu_logo.png"></a>
 			</div>
-			
-			<div class="calendar-box">
-				<a href="#"><img src="images/icon_calendar.png" class="calender-img"/></a>
-			</div>
 
 			<div class="search-box">
-				<a href="#" class="search-btn"><img src="images/icon_search.png"></a>
+				<a href="#" class="search-calendar"></a>
 				<input type="text" class="search-text" placeholder="Search..."/>
 			</div>
 
@@ -161,6 +165,17 @@
 		</div>
 	</div>
 	<!-- footer / end -->
+
+	<script>
+		$(".search-calendar").Calendar({toolbar:true,zIndex:1000});
+		
+		
+		// var c_end = $(".search-calendar").Calendar({toolbar:true,zIndex:1000});
+		// 	afterSelected: function(obj, date) {
+		// 		$(obj).blur();
+		// 		new Calender().setRange([new Date("2016-09-10"), null]);
+		// 	}})[0];
+	</script>
 
 </body>
 </html>

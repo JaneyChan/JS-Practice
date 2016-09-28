@@ -20,7 +20,7 @@ a, a:hover {
 /* header */
 .header {
 	background: #009CDA;
-	height: 75px;
+	height: 80px;
 	position: fixed;
     right: 0;
     left: 0;
@@ -44,20 +44,23 @@ a, a:hover {
 .search-box {
 	position: absolute;
 	right: 10px;
-	top: 25px;
+	top: 22px;
 }
-.search-box .search-btn {
+.search-box .search-calendar {
 	position: absolute;
-	left: 5px;
-	top: 4px;
+	left: 0;
+	top: 0;
+	width: 35px;
+	height: 100%;
 }
 .search-box .search-text {
-	padding: 6px 6px 6px 25px;
+	padding: 8px 8px 8px 35px;
 	font-size: 13px;
 	border: 0px;
 	border-radius: 5px;
-	width: 250px;
+	width: 215px;
 	box-shadow: 0 2px 3px rgba(0,0,0,0.1); 
+	background: url("../images/calendar.png") no-repeat #fff 5px 4px;
 }
 
 /* content */
@@ -144,11 +147,6 @@ a, a:hover {
 		position: absolute;
 		right: 90px;
 	}
-	.search-box .search-btn {
-		position: absolute;
-		left: 5px;
-		top: 4px;
-	}
 	.container-wrap {
     	width: 768px;
   	}
@@ -170,20 +168,12 @@ a, a:hover {
 		right: 175px;
 		top: 21px;
 	}
-	.search-box .search-btn {
-		position: absolute;
-		left: 5px;
-		top: 4px;
-	}
 	.search-box .search-text {
 		width: 150px;
 	}
 	.container-wrap {
     	width: 100%;
   	}
-	.content {
-		margin-top: 155px;
-	}
   	.content .daily-date {
 		margin-left: 10px;
 		margin-top: 10px;
