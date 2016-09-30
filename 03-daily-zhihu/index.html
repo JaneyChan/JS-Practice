@@ -29,7 +29,7 @@
 
 			<div class="search-box">
 				<a href="#" class="search-calendar"></a>
-				<input type="text" class="search-text" placeholder="Search..."/>
+				<input type="text" class="search-text" placeholder="搜索..."/>
 			</div>
 
 		</div>
@@ -167,14 +167,22 @@
 	<!-- footer / end -->
 
 	<script>
-		$(".search-calendar").Calendar({toolbar:true,zIndex:1000});
-		
-		
-		// var c_end = $(".search-calendar").Calendar({toolbar:true,zIndex:1000});
-		// 	afterSelected: function(obj, date) {
-		// 		$(obj).blur();
-		// 		new Calender().setRange([new Date("2016-09-10"), null]);
-		// 	}})[0];
+		function getCurrentDate() {
+    		var dd = new Date();
+			dd.setDate(dd.getDate() + 2);//获取当前时间的后一天的时间
+			var y = dd.getFullYear();
+			var m = dd.getMonth() + 1;//获取当前月份的日期
+			var d = dd.getDate();
+			return y + "-" + m + "-" + d;
+		}
+
+		var calendar = new Calendar();
+		calendar.init({
+			target: $('.search-calendar'),
+			toolbar: true,
+			zIndex:998,
+			range: ['2013-5-19', getCurrentDate()],  // 可选时间范围，知乎日报的生日为 2013 年 5 月 19 日
+		});
 	</script>
 
 </body>

@@ -1,10 +1,4 @@
-﻿/*
- * Created with Sublime Text 2.
- * User: 田想兵
- * Date: 2015-03-09
- * Time: 17:02:02
- * Contact: 55342775@qq.com
- */
+﻿
 ;
 (function(root, factory) {
 	//amd
@@ -79,7 +73,7 @@
 			}
 		},
 		init: function(settings) {
-			$('body').append('<div class="ui-calendar clearfix" id="' + this.id + '"><div class="ui-calendar-pannel clearfix" data-role="pannel"><span class="ui-calendar-control" data-role="prev-year">&lt;&lt;</span><span class="ui-calendar-control" data-role="prev-month">&lt;</span><span class="ui-calendar-control month" data-role="current-month"></span><span class="ui-calendar-control year" data-role="current-year"></span><span class="ui-calendar-control" data-role="next-month">&gt;</span><span class="ui-calendar-control" data-role="next-year">&gt;&gt;</span></div><div class="calendar-header clearfix"></div><div class="c_days clearfix"></div></div>');
+			$('.search-box').append('<div class="ui-calendar clearfix" id="' + this.id + '"><div class="ui-calendar-pannel clearfix" data-role="pannel"><span class="ui-calendar-control" data-role="prev-month"><img src="images/left_arrow.png"/></span><span class="month" data-role="current-month"></span><span class="year" data-role="current-year"></span><span class="ui-calendar-control" data-role="next-month"><img src="images/right_arrow.png"/></span></div><div class="calendar-header clearfix"></div><div class="c_days clearfix"></div></div>');
 			this.calendarContainer = $('#' + this.id);
 			var _this = this;
 			this.settings = $.extend({}, this.settings, settings);
@@ -104,8 +98,6 @@
 				this.autohide = false;
 				this.showToolbar();
 			}
-			// this.formatDate();
-			// this.renderHeader();
 			this.bindEvent();
 			if (this.settings.target) {
 				this.hide();
@@ -147,12 +139,8 @@
 			this.formatDate();
 			this.renderHeader();
 			this.isShow = true;
-			this.setPosition();
 			this.settings.show && this.settings.show(this.calendarContainer);
 			var _this = this;
-			this.timer = setInterval(function() {
-				_this.setPosition.call(_this);
-			}, 500);
 			if (this.settings.time) {
 				this.settings.toolbar = true;
 				this.autohide = false;
@@ -170,38 +158,6 @@
 			this.isShow = false;
 			this.settings.hide && this.settings.hide(this.calendarContainer);
 			clearInterval(this.timer);
-		},
-		setPosition: function() {
-			var x = 0,
-				y = 0;
-			if (this.settings.target && $(this.settings.target).size()) {
-				if ($(this.settings.target)[0].nodeType === 1) {
-					y = $(this.settings.target).offset().top + $(this.settings.target).outerHeight() + 5;
-					x = $(this.settings.target).offset().left;
-					console.log("this : " + this);
-				} else {
-					y = $(this.settings.target).prev().offset().top + $(this.settings.target).prev().outerHeight() + 5;
-					x = $(this.settings.target).prev().offset().left;
-				}
-				// var st = $(window).scrollTop();
-				// var winY = $(window).height();
-				// if (y + this.calendarContainer.outerHeight() > st + winY) {
-				// 	var tmp = y - this.calendarContainer.outerHeight() - $(this.settings.target).outerHeight();
-				// 	if (tmp > 0) {
-				// 		y = tmp;
-				// 	}
-				// }
-				this.calendarContainer.css({
-					top: y,
-					left: x
-				});
-			}
-
-			// this.calendarContainer.css({
-			// 		// position: absolute,
-			// 		top: 200,
-			// 		left:100
-			// 	});
 		},
 		setDate: function(value) {
 			var _this = this,
@@ -449,7 +405,7 @@
 			$('[data-role="current-year"]', this.calendarContainer).html(this.year);
 			var daylist = '';
 			for (var i = 0, l = this.dayArr.length; i < l; i++) {
-				daylist += '<b>' + this.dayArr[i] + '</b>';
+				daylist += '<span>' + this.dayArr[i] + '</span>';
 			};
 			if (!this.settings.onlyYM) {
 				$('.calendar-header', this.calendarContainer).html(daylist);

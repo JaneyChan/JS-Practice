@@ -1,54 +1,51 @@
 ﻿.ui-calendar { 
-	border: 1px solid #dcdcdc; 
-	background-color: #f9f9f9; 
-	position: absolute; 
+	background-color: #fff; 
+	position: absolute;
+	top: 42px;
+	left: 1px;
 	color: #333; 
-	font-family: arial, 'Hiragino Sans GB', 
-	sans-serif; 
-	position: absolute; 
+	border-radius: 5px; 
+	box-shadow: 0 3px 5px rgba(0,0,0,0.1); 
 }
 .ui-calendar ul { 
 	list-style: none; 
 	overflow: hidden; 
 	margin: 0; 
 	padding: 0; 
-	background-color: #fff; 
-	width: 210px; 
+	width: 280px; 
 }
 .ui-calendar li { 
 	list-style: none; 
 	float: left; 
-	width: 30px; 
-	height: 28px;
-	line-height: 28px; 
+	width: 40px; 
+	height: 38px;
+	line-height: 38px; 
 	text-align: center;
 	cursor: pointer;
 }
 .ui-calendar li:hover, .ui-calendar-toolbar a:hover { 
-	background-color: #f2f2f2; 
+	background-color: #F6F6F6; 
 }
 .ui-calendar-pannel {
 	background: #FF425D;
 	color: #fff;
-	padding: 5px 0;
+	padding: 10px 0;
+	border-radius: 5px 5px 0px 0px
 }
 .ui-calendar-pannel span { 
 	cursor: pointer; 
 	display: block; 
 	float: left; 
-	width: 30px; 
+	width: 50px; 
 	text-align: center; 
 	height: 30px; 
 	line-height: 30px; 
 }
 .ui-calendar-pannel .month, .ui-calendar-pannel .year { 
-	width: 40px; 
-}
-.ui-calendar-pannel .month { 
-	width: 50px; 
+	width: 90px; 
 }
 .ui-calendar-toolbar { 
-	border-top:1px solid #eee;
+	border-top:1px solid #f2f2f2;
 	text-align: right;
 }
 .ui-month-list, .ui-year-list{
@@ -83,9 +80,9 @@
 .ui-calendar-toolbar a {
 	cursor: pointer; 
 	display: inline-block; 
-	height: 30px;
-	line-height: 30px; 
-	width:45px; 
+	height: 40px;
+	line-height: 40px; 
+	width:55px; 
 	text-align: center; 
 }
 .ui-calendar-toolbar a.ui-calendar-close { 
@@ -102,22 +99,22 @@
 	cursor: pointer;
 }
 .preday, .nextday,.prevtenyear,.nexttenyear { 
-	color: #969696;
+	color: #cacaca;
 }
-.calendar-header b { 
-	width: 30px; 
+.calendar-header span { 
+	width: 40px; 
 	padding: 5px 0;
 	float: left; 
 	display: block; 
 	text-align: center; 
-	color: #999;
+	color: #FF425D;
 }
 .ui-calendar li.focus { 
 	background-color: #FF425D; 
 	color: #FFF; 
 }
 .ui-calendar li.disabled { 
-	background-color: #ccc;
+	background-color: #efefef;
 }
 .clearfix:after { 
 	display: block; 
@@ -130,4 +127,10 @@
 .clearfix { 
 	display: block;
 	zoom:1; 
+}
+@media (min-width: 320px) and (max-width: 768px) {
+	.ui-calendar { 
+		top: 63px;
+		left: 4%;
+	}
 }
