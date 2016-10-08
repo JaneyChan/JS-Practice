@@ -41,7 +41,6 @@ a, a:hover {
     left: 0;
     top: 0;
     z-index: 998;
-	opacity: 0.8;
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 }
 .container-wrap {

@@ -21,7 +21,11 @@
 </head>
 <body>
 	<!-- header / start -->
+	<div class="header-blur">
+		
+	</div>
 	<div class="header">
+		
 		<div class="container-wrap">
 			<div class="nav-logo">
 				<a href="http://zhihudaily.ahorn.me/" class="link-logo"><img src="images/zhihu_logo.png"></a>
@@ -213,19 +217,6 @@
 			zIndex:998,
 			range: ['2013-5-19', getCurrentDate()],  // 可选时间范围，知乎日报的生日为 2013 年 5 月 19 日
 		});
-
-
-
-		$(window).scroll(function() {
-            // 当滚动到最底部以上100像素时， 加载新内容
-            if ($(this).scrollTop() >= 100) {
-                $(".header").css("background-color", red);
-            } else {
-				$(".header").css("background-color", green);
-			}
-        });
-
-		window.onscroll = function() { blurryContent.scrollTop = window.pageYOffset; }                              
 
 	</script>
 
