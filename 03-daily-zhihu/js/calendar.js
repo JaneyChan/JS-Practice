@@ -31,7 +31,7 @@
 		this.settings = {};
 		this.isShow = false;
 		this.autohide = true;
-		this.toolbarTpl = '<div class="ui-calendar-toolbar clearfix"><a class="js-calendar-submit">确定</a><a class="ui-calendar-today">现在</a><a class="ui-calendar-close">关闭</a></div>';
+		this.toolbarTpl = '<div class="ui-calendar-toolbar clearfix"><a class="ui-calendar-today">现在</a><a class="js-calendar-submit">确定</a>';
 		this.timeTpl = '<div class="ui-calendar-time clearfix"><select class="js-calendar-hours">时</select>:<select class="js-calendar-minutes">分</select><s>:</s><select class="js-calendar-second">秒</select></div>';
 		this.dateArr = [];
 		this.maxDays = 9999;
@@ -73,6 +73,7 @@
 			}
 		},
 		init: function(settings) {
+			$('.header').append('<div class="ui-show-bg"></div>')
 			$('.search-box').append('<div class="ui-calendar clearfix" id="' + this.id + '"><div class="ui-calendar-pannel clearfix" data-role="pannel"><span class="ui-calendar-control" data-role="prev-month"><img src="images/left_arrow.png"/></span><span class="month" data-role="current-month"></span><span class="year" data-role="current-year"></span><span class="ui-calendar-control" data-role="next-month"><img src="images/right_arrow.png"/></span></div><div class="calendar-header clearfix"></div><div class="c_days clearfix"></div></div>');
 			this.calendarContainer = $('#' + this.id);
 			var _this = this;
@@ -152,12 +153,16 @@
 				$('.ui-month-list', this.calendarContainer).show();
 				$('.c_days', this.calendarContainer).hide();
 			}
+			$('html, body').css("overflow", "hidden");
+			$('.ui-show-bg').addClass('ui-calendar-bg');
 		},
 		hide: function() {
 			this.calendarContainer.hide();
 			this.isShow = false;
 			this.settings.hide && this.settings.hide(this.calendarContainer);
 			clearInterval(this.timer);
+			$('html, body').css("overflow", "auto");
+			$('.ui-show-bg').removeClass('ui-calendar-bg');
 		},
 		setDate: function(value) {
 			var _this = this,

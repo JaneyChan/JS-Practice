@@ -3,7 +3,7 @@
 	position: absolute;
 	top: 42px;
 	left: 1px;
-	color: #333; 
+	color: #505050; 
 	border-radius: 5px; 
 	box-shadow: 0 3px 5px rgba(0,0,0,0.1); 
 }
@@ -12,7 +12,9 @@
 	overflow: hidden; 
 	margin: 0; 
 	padding: 0; 
-	width: 280px; 
+	width: 290px; 
+	padding: 0 5px;
+	font-size: 12px;
 }
 .ui-calendar li { 
 	list-style: none; 
@@ -22,15 +24,21 @@
 	line-height: 38px; 
 	text-align: center;
 	cursor: pointer;
+	border-radius: 50%;
 }
-.ui-calendar li:hover, .ui-calendar-toolbar a:hover { 
-	background-color: #F6F6F6; 
+.ui-calendar li:hover {
+	background-color: #efefef; 
+	border-radius: 50%;
+}
+
+.ui-calendar-toolbar a:hover { 
+	background-color: #efefef; 
 }
 .ui-calendar-pannel {
 	background: #FF425D;
 	color: #fff;
-	padding: 10px 0;
-	border-radius: 5px 5px 0px 0px
+	padding: 15px 5px;
+	border-radius: 5px 5px 0px 0px;
 }
 .ui-calendar-pannel span { 
 	cursor: pointer; 
@@ -45,8 +53,9 @@
 	width: 90px; 
 }
 .ui-calendar-toolbar { 
-	border-top:1px solid #f2f2f2;
 	text-align: right;
+	font-size: 14px;
+	padding: 0 5px 5px 0;
 }
 .ui-month-list, .ui-year-list{
 	display: none; 
@@ -82,11 +91,9 @@
 	display: inline-block; 
 	height: 40px;
 	line-height: 40px; 
-	width:55px; 
+	width:65px; 
 	text-align: center; 
-}
-.ui-calendar-toolbar a.ui-calendar-close { 
-	border-right-width: 0; 
+	color: #FF425D;
 }
 .ui-calendar-time {
 	margin: 0 auto;
@@ -101,9 +108,12 @@
 .preday, .nextday,.prevtenyear,.nexttenyear { 
 	color: #cacaca;
 }
+.calendar-header {
+	padding: 0 5px;
+}
 .calendar-header span { 
 	width: 40px; 
-	padding: 5px 0;
+	padding: 10px 0 5px 0;
 	float: left; 
 	display: block; 
 	text-align: center; 
@@ -113,24 +123,44 @@
 	background-color: #FF425D; 
 	color: #FFF; 
 }
-.ui-calendar li.disabled { 
+/*.ui-calendar li.disabled { 
 	background-color: #efefef;
-}
+	pointer-events: none; 
+}*/
 .clearfix:after { 
 	display: block; 
 	height: 0; 
 	clear: both; 
 	visibility: hidden; 
 	content: '.';
-	 zoom:1;
+	zoom:1;
 }
 .clearfix { 
 	display: block;
 	zoom:1; 
 }
+.ui-calendar-bg {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	opacity: 1;
+	background-color: rgba(0, 0, 0, 0.45);
+	z-index: 996;
+}
 @media (min-width: 320px) and (max-width: 768px) {
-	.ui-calendar { 
-		top: 63px;
+	.ui-calendar {
+		position: fixed; 
+		top: 150px;;
+		left: 50%;
+		width: 290px;
+		margin-left: -141px;
+	}
+	.search-box .search-calendar {
+		position: absolute;
 		left: 4%;
+    	top: 20px;
+		height: 40px;
 	}
 }

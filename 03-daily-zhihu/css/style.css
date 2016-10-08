@@ -73,7 +73,7 @@ a, a:hover {
 	font-size: 14px;
 	border: 0px;
 	border-radius: 5px;
-	width: 282px;
+	width: 292px;
 	box-shadow: 0 2px 3px rgba(0,0,0,0.1); 
 	background: url("../images/calendar.png") no-repeat #fff 5px 6px;
 }
@@ -83,11 +83,10 @@ a, a:hover {
 	margin-top: 115px;
 }
 .content .daily-date {
-	margin:25px 0;
+	margin: 25px 0;
 	color: #009CDA;
 	font-size: 20px;
 	line-height: 20px;
-	text-shadow: 0 1px 2px #c4b59d, 0px -2px 1px #fff;
 }
 .content .daily-date span{
 	margin-left: 10px;
@@ -100,7 +99,7 @@ a, a:hover {
 	width: 300px;
 	height: 360px;
 	padding: 20px;	
-	margin: 0 25px 25px 0;
+	margin: 0 20px 20px 0;
 	background: #fff;
 	box-shadow: 0 5px 10px rgba(0,0,0,0.1); 
 }
@@ -147,7 +146,7 @@ a, a:hover {
 	text-decoration: underline;
 }
 
-@media (min-width: 768) {
+@media (min-width: 960px) {
 	.container-wrap {
     	width: 960px;
   	}
