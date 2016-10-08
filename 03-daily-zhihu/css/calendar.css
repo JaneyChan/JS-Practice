@@ -5,7 +5,7 @@
 	left: 1px;
 	color: #505050; 
 	border-radius: 5px; 
-	box-shadow: 0 3px 5px rgba(0,0,0,0.1); 
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); 
 }
 .ui-calendar ul { 
 	list-style: none; 
@@ -123,10 +123,9 @@
 	background-color: #FF425D; 
 	color: #FFF; 
 }
-/*.ui-calendar li.disabled { 
-	background-color: #efefef;
+.ui-calendar li.disabled { 
 	pointer-events: none; 
-}*/
+}
 .clearfix:after { 
 	display: block; 
 	height: 0; 
@@ -152,7 +151,7 @@
 @media (min-width: 320px) and (max-width: 768px) {
 	.ui-calendar {
 		position: fixed; 
-		top: 150px;;
+		top: 100px;;
 		left: 50%;
 		width: 290px;
 		margin-left: -145px;

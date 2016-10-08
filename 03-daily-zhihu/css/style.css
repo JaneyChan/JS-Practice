@@ -41,6 +41,8 @@ a, a:hover {
     left: 0;
     top: 0;
     z-index: 998;
+	opacity: 0.8;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 }
 .container-wrap {
 	margin: 0 auto;
@@ -81,6 +83,11 @@ a, a:hover {
 /* content */
 .content {
 	margin-top: 115px;
+}
+
+.content .current-date {
+	padding: 15px 0;
+	font-size: 22px;
 }
 .content .daily-item {
 	display: inline-block;
@@ -168,7 +175,7 @@ a, a:hover {
 }
 @media (min-width: 320px) and (max-width: 768px) {
 	.content {
-		margin-top: 170px;
+		margin-top: 160px;
 	}
 	.search-box {
 		position: absolute;
@@ -184,6 +191,9 @@ a, a:hover {
 	.container-wrap {
     	width: 100%;
   	}
+	.content .current-date {
+		margin-left: 4%;
+	}
   	.content .daily-date {
 		margin-left: 4%;
 		margin-top: 10px;
