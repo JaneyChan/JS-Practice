@@ -32,22 +32,47 @@ a, a:hover {
    color: #cacaca;
 }
 
-/* header */
-.header {
-	background: #009CDA;
-	height: 80px;
-	position: fixed;
-    right: 0;
-    left: 0;
-    top: 0;
-    z-index: 998;
-	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
-}
 .container-wrap {
 	margin: 0 auto;
 	width: 960px;
 	position: relative;
 }
+
+/* header */
+.header-bg {
+	background: rgba(0, 156, 218, 1);
+	z-index: 996;
+	height: 80px;
+	position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+	-webkit-filter: blur(30px);  
+	filter: blur(30px);  
+	margin: -30px;
+}
+.searchbox-bg {
+	border-radius: 5px;
+	width: 292px;
+	height: 40px;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.1); 
+	background:rgb(255, 255, 255);
+	position: absolute;
+	right: 10px;
+	top: 22px;
+}
+
+.header-blur {
+	background: rgba(0, 156, 218, 0.9);
+	z-index: 998;
+	height: 80px;
+	position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+}
+
 .nav-logo .link-logo {
     display: inline-block;
 	margin-top: 20px;
