@@ -149,18 +149,3 @@
 	background-color: rgba(0, 0, 0, 0.45);
 	z-index: 996;
 }
-@media (min-width: 320px) and (max-width: 768px) {
-	.ui-calendar {
-		position: fixed; 
-		top: 100px;;
-		left: 50%;
-		width: 290px;
-		margin-left: -145px;
-	}
-	.search-box .search-calendar {
-		position: absolute;
-		left: 4%;
-    	top: 20px;
-		height: 40px;
-	}
-}

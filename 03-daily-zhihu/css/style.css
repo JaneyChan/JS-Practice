@@ -201,26 +201,40 @@ a, a:hover {
 	}
 }
 @media (min-width: 320px) and (max-width: 768px) {
-	.nav-logo .link-logo {
-		background: url(../images/zhihu_logo_mobile.png) no-repeat;
-		width: 40px;
-		height: 40px;
+	.container-wrap {
+    	width: 100%;
+  	}
+	.header-bg {
+		height: 64px;
 	}
-	.content {
-		margin-top: 90px;
+	.searchbox-bg {
+		position: absolute;
+		right: 10px;
+		top: 12px;
+	}
+
+	.header-blur {
+		height: 64px;
 	}
 	.search-box {
 		position: absolute;
-		top: 20px;
+		top: 12px;
 		right: 4%;
 	}
 	.search-box .search-text {
 		width: 200px;
 		
 	}
-	.container-wrap {
-    	width: 100%;
-  	}
+	.nav-logo .link-logo {
+		background: url(../images/zhihu_logo_mobile.png) no-repeat;
+		width: 40px;
+		height: 40px;
+		margin-top: 12px;
+	}
+	.content {
+		margin-top: 90px;
+	}
+	
 	.content .current-date {
 		margin-left: 4%;
 		font-size: 18px;
