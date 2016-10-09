@@ -205,36 +205,45 @@ a, a:hover {
     	width: 100%;
   	}
 	.header-bg {
-		height: 64px;
+		height: 44px;
 	}
 	.searchbox-bg {
 		position: absolute;
-		right: 10px;
-		top: 12px;
+		top: 8px;
+		right: 4%;
 	}
 
 	.header-blur {
-		height: 64px;
+		height: 44px;
 	}
 	.search-box {
 		position: absolute;
-		top: 12px;
+		top: 8px;
 		right: 4%;
 	}
+	.search-box .search-calendar {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 35px;
+		height: 100%;
+	}
 	.search-box .search-text {
+		padding: 5px 10px 5px 38px;
 		width: 200px;
-		
+		box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+		background: url("../images/calendar.png") no-repeat #fff 5px 2px;
 	}
 	.nav-logo .link-logo {
 		background: url(../images/zhihu_logo_mobile.png) no-repeat;
-		width: 40px;
-		height: 40px;
-		margin-top: 12px;
+		width: 30px;
+		height: 30px;
+		margin-top: 6px;
 	}
 	.content {
-		margin-top: 90px;
+		margin-top: 50px;
 	}
-	
+
 	.content .current-date {
 		margin-left: 4%;
 		font-size: 18px;
@@ -261,6 +270,7 @@ a, a:hover {
 	    position: absolute;
 	    top: 0px;
 	    left: 95px;
+			height: 80px;
 	}
 	.content .content-page {
 		text-align: center;
