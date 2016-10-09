@@ -31,7 +31,7 @@
 		this.settings = {};
 		this.isShow = false;
 		this.autohide = true;
-		this.toolbarTpl = '<div class="ui-calendar-toolbar clearfix"><a class="ui-calendar-today">现在</a><a class="js-calendar-submit">确定</a>';
+		this.toolbarTpl = '<div class="ui-calendar-toolbar clearfix"><a class="ui-calendar-today">今天</a><a class="js-calendar-submit">确定</a>';
 		this.timeTpl = '<div class="ui-calendar-time clearfix"><select class="js-calendar-hours">时</select>:<select class="js-calendar-minutes">分</select><s>:</s><select class="js-calendar-second">秒</select></div>';
 		this.dateArr = [];
 		this.maxDays = 9999;

@@ -35,7 +35,8 @@
 	background-color: #efefef; 
 }
 .ui-calendar-pannel {
-	background: #FF425D;
+	background: linear-gradient(to bottom right,#12ADFD, #716BD9);
+	background: -webkit-linear-gradient(to bottom right,#12ADFD, #716BD9);
 	color: #fff;
 	padding: 15px 5px;
 	border-radius: 5px 5px 0px 0px;
@@ -93,7 +94,7 @@
 	line-height: 40px; 
 	width:65px; 
 	text-align: center; 
-	color: #FF425D;
+	color: #716BD9;
 }
 .ui-calendar-time {
 	margin: 0 auto;
@@ -117,10 +118,10 @@
 	float: left; 
 	display: block; 
 	text-align: center; 
-	color: #FF425D;
+	color: #716BD9;
 }
 .ui-calendar li.focus { 
-	background-color: #FF425D; 
+	background-color: #716BD9; 
 	color: #FFF; 
 }
 .ui-calendar li.disabled { 
