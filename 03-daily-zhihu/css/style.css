@@ -47,9 +47,9 @@ a, a:hover {
     right: 0;
     left: 0;
     top: 0;
-	-webkit-filter: blur(30px);  
-	filter: blur(30px);  
-	margin: -30px;
+	-webkit-filter: blur(20px);  
+	filter: blur(20px);  
+	margin: -45px;  /*消除边缘透明*/  
 }
 .searchbox-bg {
 	border-radius: 5px;
