@@ -153,7 +153,7 @@
 @media (min-width: 320px) and (max-width: 768px) {
 	.ui-calendar {
 		position: fixed;
-		top: 65px;;
+		top: 70px;
 		left: 50%;
 		width: 290px;
 		margin-left: -145px;
