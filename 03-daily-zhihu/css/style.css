@@ -205,20 +205,20 @@ a, a:hover {
     	width: 100%;
   	}
 	.header-bg {
-		height: 44px;
+		height: 55px;
 	}
 	.searchbox-bg {
 		position: absolute;
-		top: 8px;
+		top: 12px;
 		right: 4%;
 	}
 
 	.header-blur {
-		height: 44px;
+		height: 55px;
 	}
 	.search-box {
 		position: absolute;
-		top: 8px;
+		top: 12px;
 		right: 4%;
 	}
 	.search-box .search-calendar {
@@ -238,10 +238,10 @@ a, a:hover {
 		background: url(../images/zhihu_logo_mobile.png) no-repeat;
 		width: 30px;
 		height: 30px;
-		margin-top: 6px;
+		margin-top: 12px;
 	}
 	.content {
-		margin-top: 50px;
+		margin-top: 60px;
 	}
 
 	.content .current-date {
