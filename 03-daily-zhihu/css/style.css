@@ -1,6 +1,6 @@
-html, body { 
-	padding: 0; 
-	margin: 0; 
+html, body {
+	padding: 0;
+	margin: 0;
 	border: 0;
 }
 body {
@@ -16,7 +16,7 @@ a, a:hover {
 /* 去掉的元素的边框 */
 *:focus {
 	outline: none;
-} 
+}
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: #cacaca;
 }
@@ -40,22 +40,22 @@ a, a:hover {
 
 /* header */
 .header-bg {
-	background: rgba(0, 156, 218, 1);
+	background: rgba(24, 146, 245, 1);
 	z-index: 996;
 	height: 80px;
 	position: fixed;
     right: 0;
     left: 0;
     top: 0;
-	-webkit-filter: blur(20px);  
-	filter: blur(20px);  
-	margin: -45px;  /*消除边缘透明*/  
+	-webkit-filter: blur(20px);
+	filter: blur(20px);
+	margin: -45px;  /*消除边缘透明*/
 }
 .searchbox-bg {
 	border-radius: 5px;
 	width: 292px;
 	height: 40px;
-	box-shadow: 0 2px 3px rgba(0,0,0,0.1); 
+	box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 	background:rgb(255, 255, 255);
 	position: absolute;
 	right: 10px;
@@ -63,7 +63,7 @@ a, a:hover {
 }
 
 .header-blur {
-	background: rgba(0, 156, 218, 0.9);
+	background: rgba(24, 146, 245, 0.9);
 	z-index: 998;
 	height: 80px;
 	position: fixed;
@@ -74,8 +74,11 @@ a, a:hover {
 }
 
 .nav-logo .link-logo {
-    display: inline-block;
+  display: inline-block;
 	margin-top: 20px;
+	background: url(../images/zhihu_logo.png) no-repeat;
+	width: 126px;;
+	height: 42px;
 }
 .calendar-box {
 	position: absolute;
@@ -85,7 +88,7 @@ a, a:hover {
 .search-box {
 	position: absolute;
 	right: 10px;
-	top: 22px;
+	top: 20px;
 }
 .search-box .search-calendar {
 	position: absolute;
@@ -100,7 +103,7 @@ a, a:hover {
 	border: 0px;
 	border-radius: 5px;
 	width: 292px;
-	box-shadow: 0 2px 3px rgba(0,0,0,0.1); 
+	box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 	background: url("../images/calendar.png") no-repeat #fff 5px 6px;
 }
 
@@ -118,10 +121,10 @@ a, a:hover {
 	border: 0px;
 	width: 300px;
 	height: 360px;
-	padding: 20px;	
+	padding: 20px;
 	margin: 0 20px 20px 0;
 	background: #fff;
-	box-shadow: 0 5px 10px rgba(0,0,0,0.1); 
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 .content .daily-item:nth-child(3n) {
 	margin-right: 0;
@@ -147,7 +150,7 @@ a, a:hover {
     left: 0;
 }
 .content .daily-item-title:hover{
-	color: #009CDA;
+	color: #2297F5;
 }
 .content .content-page {
 	text-align: center;
@@ -198,32 +201,36 @@ a, a:hover {
 	}
 }
 @media (min-width: 320px) and (max-width: 768px) {
+	.nav-logo .link-logo {
+		background: url(../images/zhihu_logo_mobile.png) no-repeat;
+		width: 40px;
+		height: 40px;
+	}
 	.content {
-		margin-top: 160px;
+		margin-top: 90px;
 	}
 	.search-box {
 		position: absolute;
-		left: 0;
-		top: 80px;
-		padding: 20px 4%;
-		width:100%;
-		background: #F4F4F4;
+		top: 20px;
+		right: 4%;
 	}
 	.search-box .search-text {
-		width: 100%;
+		width: 200px;
+		
 	}
 	.container-wrap {
     	width: 100%;
   	}
 	.content .current-date {
 		margin-left: 4%;
+		font-size: 18px;
 	}
   	.content .daily-date {
 		margin-left: 4%;
 		margin-top: 10px;
 	}
 	.content .daily-item {
-		width: 92%;  
+		width: 92%;
 		height: 110px;
 		margin: 0 4% 10px 4%;
 		border-radius: 5px;
@@ -245,4 +252,3 @@ a, a:hover {
 		text-align: center;
 	}
 }
-
