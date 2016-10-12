@@ -74,7 +74,7 @@
 		},
 		init: function(settings) {
 			$('.header').append('<div class="ui-show-bg"></div>')
-			$('.search-box').append('<div class="ui-calendar clearfix" id="' + this.id + '"><div class="ui-calendar-pannel clearfix" data-role="pannel"><span class="ui-calendar-control" data-role="prev-month"><img src="images/left_arrow.png"/></span><span class="month" data-role="current-month"></span><span class="year" data-role="current-year"></span><span class="ui-calendar-control" data-role="next-month"><img src="images/right_arrow.png"/></span></div><div class="calendar-header clearfix"></div><div class="c_days clearfix"></div></div>');
+			$('.search-box').append('<div class="ui-calendar clearfix" id="' + this.id + '"><div class="ui-calendar-pannel clearfix" data-role="pannel"><span class="ui-calendar-control" data-role="prev-month"><img src="images/arrow_left.png"/></span><span class="month" data-role="current-month"></span><span class="year" data-role="current-year"></span><span class="ui-calendar-control" data-role="next-month"><img src="images/arrow_right.png"/></span></div><div class="calendar-header clearfix"></div><div class="c_days clearfix"></div></div>');
 			this.calendarContainer = $('#' + this.id);
 			var _this = this;
 			this.settings = $.extend({}, this.settings, settings);

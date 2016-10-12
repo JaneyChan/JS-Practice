@@ -5,12 +5,12 @@ html, body {
 }
 body {
 	background-color: #F4F4F4;
-	color: #999;
+	color: #666;
 	font-size:16px;
 	font-family: "Microsoft YaHei", sans-serif;
 }
 a, a:hover {
-	color: #999;
+	color: #666;
 	text-decoration: none;
 }
 /* 去掉的元素的边框 */
@@ -44,9 +44,9 @@ a, a:hover {
 	z-index: 996;
 	height: 80px;
 	position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
+ 	right: 0;
+  	left: 0;
+  	top: 0;
 	-webkit-filter: blur(20px);
 	filter: blur(20px);
 	margin: -45px;  /*消除边缘透明*/
@@ -61,18 +61,16 @@ a, a:hover {
 	right: 10px;
 	top: 22px;
 }
-
 .header-blur {
 	background: rgba(24, 146, 245, 0.9);
 	z-index: 998;
 	height: 80px;
 	position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
+  	right: 0;
+ 	left: 0;
+  	top: 0;
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 }
-
 .nav-logo .link-logo {
   display: inline-block;
 	margin-top: 20px;
@@ -142,7 +140,6 @@ a, a:hover {
 .daily-page .daily-item-title {
     display: block;
     line-height: 25px;
-    color: #666;
     font-size: 15px;
     height: 50px;
     position: absolute;
@@ -156,16 +153,68 @@ a, a:hover {
 .footer {
 	margin-bottom: 30px;
 	background: #f3f3f3;
-	color: #666;
 	text-align: center;
 	font-size: 14px;
 	margin: 30px 0;
 }
 .footer a {
-	color: #666;
 	text-decoration: underline;
 }
 
+
+/* Search Result Page*/
+/* 搜索结果页 */
+.result-content {
+	margin-top: 115px;
+	margin-bottom: 50px;
+}
+#timeline {
+    position: relative;
+}
+#timeline:before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: #1892F5;
+    position: absolute;
+    left: 32px;
+    top: 0;
+    z-index: -1;
+}
+#timeline .timeline-date {
+	line-height: 50px;
+	padding-left: 75px;
+	font-size: 18px;
+	background: url(../images/icon-time.png) no-repeat 7px 0px;
+}
+#timeline .timeline-detail {
+    position: relative;
+}
+#timeline .timeline-detail {
+	margin: 30px 25px;
+	background: url(../images/icon-concentric.png) no-repeat 0 14px;
+}
+#timeline .timeline-detail:before {
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 7px solid #FFFFFF;
+}
+#timeline .timeline-detail .timeline-content {
+	margin-left: 32px;
+	background: #fff;
+	border-radius: 5px;
+	line-height: 25px;
+	padding: 10px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* 响应式 */
 @media (min-width: 960px) {
 	.container-wrap {
     	width: 960px;
@@ -267,5 +316,9 @@ a, a:hover {
 	    top: 0px;
 	    left: 95px;
 			height: 80px;
+	}
+	/* 搜索结果页 */
+	.result-content {
+		margin-top: 80px;
 	}
 }
