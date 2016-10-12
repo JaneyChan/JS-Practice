@@ -44,9 +44,9 @@ a, a:hover {
 	z-index: 996;
 	height: 80px;
 	position: fixed;
-    right: 0;
-    left: 0;
-    top: 0;
+  right: 0;
+  left: 0;
+  top: 0;
 	-webkit-filter: blur(20px);
 	filter: blur(20px);
 	margin: -45px;  /*消除边缘透明*/
@@ -67,9 +67,9 @@ a, a:hover {
 	z-index: 998;
 	height: 80px;
 	position: fixed;
-    right: 0;
-    left: 0;
-    top: 0;
+  right: 0;
+  left: 0;
+  top: 0;
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 }
 
@@ -112,11 +112,11 @@ a, a:hover {
 	margin-top: 115px;
 }
 
-.content .current-date {
+.daily-page .current-date {
 	padding: 15px 0;
 	font-size: 22px;
 }
-.content .daily-item {
+.daily-page .daily-item {
 	display: inline-block;
 	border: 0px;
 	width: 300px;
@@ -126,20 +126,20 @@ a, a:hover {
 	background: #fff;
 	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
-.content .daily-item:nth-child(3n) {
+.daily-page .daily-item:nth-child(3n) {
 	margin-right: 0;
 }
-.content .link-btn {
+.daily-page .link-btn {
 	display: block;
 	position: relative;
 }
-.content .daily-item-img {
+.daily-page .daily-item-img {
     display: block;
     max-width: 100%;
     height: 260px;
     border: 0;
 }
-.content .daily-item-title {
+.daily-page .daily-item-title {
     display: block;
     line-height: 25px;
     color: #666;
@@ -149,13 +149,9 @@ a, a:hover {
     top: 270px;
     left: 0;
 }
-.content .daily-item-title:hover{
+.daily-page .daily-item-title:hover{
 	color: #2297F5;
 }
-.content .content-page {
-	text-align: center;
-}
-
 /* footer */
 .footer {
 	margin-bottom: 30px;
@@ -186,17 +182,17 @@ a, a:hover {
 	.container-wrap {
     	width: 768px;
   	}
-	.content .daily-date {
+	.daily-page .daily-date {
 		margin-left: 52px;
 	}
-	.content .daily-item {
+	.daily-page .daily-item {
 		margin-left: 52px;
 		margin-right: 52px;
 	}
-	.content .daily-item:nth-child(2n) {
+	.daily-page .daily-item:nth-child(2n) {
 		margin-left: 0;
 	}
-	.content .daily-item:nth-child(3n) {
+	.daily-page .daily-item:nth-child(3n) {
 		margin-right: 52px;
 	}
 }
@@ -244,15 +240,15 @@ a, a:hover {
 		margin-top: 60px;
 	}
 
-	.content .current-date {
+	.daily-page .current-date {
 		margin-left: 4%;
 		font-size: 18px;
 	}
-  	.content .daily-date {
+	.daily-page .daily-date {
 		margin-left: 4%;
 		margin-top: 10px;
 	}
-	.content .daily-item {
+	.daily-page .daily-item {
 		width: 92%;
 		height: 110px;
 		margin: 0 4% 10px 4%;
@@ -262,17 +258,14 @@ a, a:hover {
 	.nav-logo {
 		margin-left: 10px;
 	}
-	.content .daily-item-img {
+	.daily-page .daily-item-img {
 	    width: 80px;
 	    height: 80px;
 	}
-	.content .daily-item-title {
+	.daily-page .daily-item-title {
 	    position: absolute;
 	    top: 0px;
 	    left: 95px;
 			height: 80px;
-	}
-	.content .content-page {
-		text-align: center;
 	}
 }
