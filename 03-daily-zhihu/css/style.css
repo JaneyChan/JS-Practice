@@ -18,18 +18,18 @@ a, a:hover {
 	outline: none;
 }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: #cacaca;
+    color: #b3b3b3;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color: #cacaca;
+   color: #b3b3b3;
    opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color: #cacaca;
+   color: #b3b3b3;
    opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: #cacaca;
+   color: #b3b3b3;
 }
 
 .container-wrap {
@@ -102,7 +102,8 @@ a, a:hover {
 	border-radius: 5px;
 	width: 292px;
 	box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-	background: url("../images/calendar.png") no-repeat #fff 5px 6px;
+	background: url("../images/icon-calendar.png") no-repeat #fff 5px 6px;
+	background-size: 25px 25px;
 }
 
 /* content */
@@ -170,6 +171,7 @@ a, a:hover {
 }
 #timeline {
     position: relative;
+    margin:0 150px;
 }
 #timeline:before {
     content: "";
@@ -185,7 +187,8 @@ a, a:hover {
 	line-height: 50px;
 	padding-left: 75px;
 	font-size: 18px;
-	background: url(../images/icon-time.png) no-repeat 7px 0px;
+	background: url(../images/icon-time.png) no-repeat 7px 0px #F4F4F4;
+	background-size: 50px 50px;
 }
 #timeline .timeline-detail {
     position: relative;
@@ -193,6 +196,7 @@ a, a:hover {
 #timeline .timeline-detail {
 	margin: 30px 25px;
 	background: url(../images/icon-concentric.png) no-repeat 0 14px;
+	background-size: 16px 16px;
 }
 #timeline .timeline-detail:before {
     content: '';
@@ -270,17 +274,17 @@ a, a:hover {
 		position: absolute;
 		left: 0;
 		top: 0;
-		width: 35px;
-		height: 100%;
 	}
 	.search-box .search-text {
 		padding: 5px 10px 5px 38px;
 		width: 200px;
 		box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-		background: url("../images/calendar.png") no-repeat #fff 5px 2px;
+		background: url("../images/icon-calendar.png") no-repeat #fff 5px 2px;
+		background-size: 25px 25px;
 	}
 	.nav-logo .link-logo {
 		background: url(../images/zhihu_logo_mobile.png) no-repeat;
+		background-size: 30px 30px;
 		width: 30px;
 		height: 30px;
 		margin-top: 12px;
@@ -321,4 +325,7 @@ a, a:hover {
 	.result-content {
 		margin-top: 80px;
 	}
+	#timeline {
+    margin:0;
+}
 }
